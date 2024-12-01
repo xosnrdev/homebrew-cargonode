@@ -2,15 +2,15 @@
 
 ## How do I install these formulae?
 
-`brew install xosnrdev/cargonode/<formula>`
+`brew install xosnrdev/cargonode/cargonode`
 
-Or `brew tap xosnrdev/cargonode` and then `brew install <formula>`.
+Or `brew tap xosnrdev/cargonode` and then `brew install cargonode`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
 tap "xosnrdev/cargonode"
-brew "<formula>"
+brew "cargonode"
 ```
 
 ## Documentation
