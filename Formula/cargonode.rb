@@ -1,21 +1,20 @@
 class Cargonode < Formula
-  desc "Unified tooling for Node.js.
-"
+  desc "A simple build tool for Node.js projects."
   homepage "https://github.com/xosnrdev/cargonode?tab=readme-ov-file#readme"
-  version "0.1.3"
+  version "1.0.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/xosnrdev/cargonode/releases/download/0.1.3/cargonode-aarch64-apple-darwin.tar.xz"
-      sha256 "d4af417ff53fe242501c7fba22b62545b1709674bb11446904bfbed25fc1b1fd"
+      url "https://github.com/xosnrdev/cargonode/releases/download/v1.0.0/cargonode-aarch64-apple-darwin.tar.xz"
+      sha256 "a84ef632c64f0ca3aa61f98527f913921621b6ed1b504d98f3b4b65a4832224c"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/xosnrdev/cargonode/releases/download/0.1.3/cargonode-x86_64-apple-darwin.tar.xz"
-      sha256 "cfac54e01cb2b94a0d5c86ff9998783d46db3af2159e0c31c02b3495fa83e205"
+      url "https://github.com/xosnrdev/cargonode/releases/download/v1.0.0/cargonode-x86_64-apple-darwin.tar.xz"
+      sha256 "a335859e91e209f39c9435b1e5350d7a9a2233e322384c845218448acffefd4f"
     end
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/xosnrdev/cargonode/releases/download/0.1.3/cargonode-x86_64-unknown-linux-gnu.tar.xz"
-    sha256 "65b207c633c123766af9da6340794b484423f7fe6be17cedef4ec1d50c9db5e2"
+    url "https://github.com/xosnrdev/cargonode/releases/download/v1.0.0/cargonode-x86_64-unknown-linux-gnu.tar.xz"
+    sha256 "cfa323c66aa3d796a16c5aa0e4b0bb46f0d5d95c0c7e113a702511c86a9eefe4"
   end
   license any_of: ["MIT", "Apache-2.0"]
 
